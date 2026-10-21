@@ -20,3 +20,6 @@ def home_usuario(username):
 @app.route("/ola/<nome>")
 def ola_nome(nome = None):
     return render_template('ola.html', nome=nome)
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5001) # executar "Flash run"
